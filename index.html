@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Humoyun Mahmudjonov</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --text: #ffffff;
+      --max-width: 92vw;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    main {
+      width: min(1100px, var(--max-width));
+      height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: clamp(24px, 5vw, 64px);
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(14px, 2vw, 24px);
+      transform: translateY(-2vh);
+    }
+
+    h1 {
+      color: var(--text);
+      font-size: clamp(2rem, 7vw, 6.4rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: clamp(-0.06em, -0.35vw, -0.025em);
+      max-width: 14ch;
+    }
+
+    p {
+      color: var(--text);
+      font-size: clamp(0.85rem, 1.8vw, 1.55rem);
+      font-weight: 400;
+      line-height: 1.35;
+      letter-spacing: clamp(0.02em, 0.22vw, 0.08em);
+      text-transform: lowercase;
+      max-width: 34ch;
+      opacity: 0.88;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .hero {
+        gap: 12px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: clamp(1.55rem, 9.5vw, 3rem);
+        line-height: 1.08;
+        letter-spacing: -0.035em;
+        max-width: 11ch;
+      }
+
+      p {
+        font-size: clamp(0.72rem, 3.3vw, 1rem);
+        line-height: 1.4;
+        letter-spacing: 0.035em;
+        max-width: 27ch;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      h1 {
+        font-size: clamp(6rem, 8vw, 9rem);
+      }
+
+      p {
+        font-size: clamp(1.4rem, 1.8vw, 2.2rem);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main aria-label="Minimal black landing page">
+    <section class="hero">
+      <h1>Humoyun Mahmudjonov</h1>
+      <p>a man intended to become a qomusiy</p>
+    </section>
+  </main>
+</body>
+</html>
