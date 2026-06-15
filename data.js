@@ -1,4 +1,8 @@
-{
+/* ============================================================
+   Site content — edit THIS file to update the whole site.
+   Works on file:// and via a server (no build step).
+   ============================================================ */
+window.SITE_DATA = {
   "meta": {
     "name": "Humoyun Mahmudjonov",
     "handle": "qomusiy",
@@ -15,37 +19,103 @@
     ]
   },
   "socials": [
-    { "label": "GitHub", "url": "https://github.com/qomusiy", "handle": "@qomusiy" },
-    { "label": "Telegram", "url": "https://t.me/qomusiy", "handle": "@qomusiy" },
-    { "label": "LinkedIn", "url": "#", "handle": "Humoyun Mahmudjonov" },
-    { "label": "Email", "url": "mailto:hasanovd366@gmail.com", "handle": "hasanovd366@gmail.com" }
+    {
+      "label": "GitHub",
+      "url": "https://github.com/qomusiy",
+      "handle": "@qomusiy"
+    },
+    {
+      "label": "Telegram",
+      "url": "https://t.me/qomusiy",
+      "handle": "@qomusiy"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "#",
+      "handle": "Humoyun Mahmudjonov"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:hasanovd366@gmail.com",
+      "handle": "hasanovd366@gmail.com"
+    }
   ],
   "stats": [
-    { "value": "5+", "label": "Years writing code" },
-    { "value": "30+", "label": "Projects shipped" },
-    { "value": "12", "label": "Open-source repos" },
-    { "value": "∞", "label": "Cups of tea" }
+    {
+      "value": "5+",
+      "label": "Years writing code"
+    },
+    {
+      "value": "30+",
+      "label": "Projects shipped"
+    },
+    {
+      "value": "12",
+      "label": "Open-source repos"
+    },
+    {
+      "value": "∞",
+      "label": "Cups of tea"
+    }
   ],
   "stack": [
     {
       "group": "Languages",
-      "items": ["Python", "JavaScript", "TypeScript", "SQL", "Bash", "HTML", "CSS"]
+      "items": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "SQL",
+        "Bash",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "group": "Backend",
-      "items": ["Django", "FastAPI", "Flask", "Django REST", "Celery", "WebSockets", "GraphQL"]
+      "items": [
+        "Django",
+        "FastAPI",
+        "Flask",
+        "Django REST",
+        "Celery",
+        "WebSockets",
+        "GraphQL"
+      ]
     },
     {
       "group": "Frontend",
-      "items": ["React", "Next.js", "Vue", "Tailwind CSS", "Vite", "Alpine.js"]
+      "items": [
+        "React",
+        "Next.js",
+        "Vue",
+        "Tailwind CSS",
+        "Vite",
+        "Alpine.js"
+      ]
     },
     {
       "group": "Data & Infra",
-      "items": ["PostgreSQL", "Redis", "Docker", "Nginx", "Linux", "Pandas", "Playwright"]
+      "items": [
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Nginx",
+        "Linux",
+        "Pandas",
+        "Playwright"
+      ]
     },
     {
       "group": "Tools",
-      "items": ["Git", "GitHub Actions", "Postman", "Figma", "pytest", "Sentry"]
+      "items": [
+        "Git",
+        "GitHub Actions",
+        "Postman",
+        "Figma",
+        "pytest",
+        "Sentry"
+      ]
     }
   ],
   "services": [
@@ -72,7 +142,12 @@
       "year": "2025",
       "category": "Personal knowledge engine",
       "description": "A self-hosted knowledge base and CMS that turns scattered notes, bookmarks, and snippets into a searchable, linked graph. Full-text search, tagging, and a clean reading view.",
-      "tags": ["FastAPI", "PostgreSQL", "React", "Full-text search"],
+      "tags": [
+        "FastAPI",
+        "PostgreSQL",
+        "React",
+        "Full-text search"
+      ],
       "url": "#",
       "repo": "#",
       "featured": true
@@ -82,7 +157,12 @@
       "year": "2025",
       "category": "Headless content API",
       "description": "A headless CMS API powering several small sites, with role-based access, image processing, and a typed SDK generated from the OpenAPI schema.",
-      "tags": ["FastAPI", "Redis", "Docker", "OpenAPI"],
+      "tags": [
+        "FastAPI",
+        "Redis",
+        "Docker",
+        "OpenAPI"
+      ],
       "url": "#",
       "repo": "#",
       "featured": true
@@ -92,7 +172,12 @@
       "year": "2024",
       "category": "SaaS — finance",
       "description": "A multi-tenant invoicing and expense-tracking app for freelancers. Recurring invoices, Stripe billing, PDF generation, and per-workspace analytics.",
-      "tags": ["Django", "Celery", "Stripe", "PostgreSQL"],
+      "tags": [
+        "Django",
+        "Celery",
+        "Stripe",
+        "PostgreSQL"
+      ],
       "url": "#",
       "repo": "#",
       "featured": true
@@ -102,7 +187,12 @@
       "year": "2024",
       "category": "Telegram automation",
       "description": "A Telegram bot serving 8k+ users with inline search, reminders, and a small admin dashboard. Built around an async queue so it never blocks.",
-      "tags": ["Python", "aiogram", "Redis", "Webhooks"],
+      "tags": [
+        "Python",
+        "aiogram",
+        "Redis",
+        "Webhooks"
+      ],
       "url": "#",
       "repo": "#",
       "featured": false
@@ -112,7 +202,12 @@
       "year": "2023",
       "category": "Data pipeline",
       "description": "A configurable scraping framework with browser automation, retry logic, and a scheduler. Outputs clean datasets to Postgres and S3.",
-      "tags": ["Playwright", "Pandas", "Celery", "S3"],
+      "tags": [
+        "Playwright",
+        "Pandas",
+        "Celery",
+        "S3"
+      ],
       "url": "#",
       "repo": "#",
       "featured": false
@@ -122,7 +217,12 @@
       "year": "2023",
       "category": "Open source",
       "description": "A lightweight, data-driven portfolio template (the ancestor of this very site) that renders entirely from a single JSON file. No build step required.",
-      "tags": ["Vanilla JS", "HTML", "CSS", "JSON"],
+      "tags": [
+        "Vanilla JS",
+        "HTML",
+        "CSS",
+        "JSON"
+      ],
       "url": "#",
       "repo": "#",
       "featured": false
@@ -168,4 +268,4 @@
       "url": "#"
     }
   ]
-}
+};

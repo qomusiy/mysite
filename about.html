@@ -3,20 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Humoyun Mahmudjonov — Python & Web Developer</title>
-  <meta name="description" content="Humoyun Mahmudjonov (qomusiy) — Python & web developer. Backends that don't fall over, and the web that sits on top of them." />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Humoyun Mahmudjonov — Python & Web Developer" />
-  <meta property="og:description" content="Backends that don't fall over, and the web that sits on top of them." />
-
+  <title>About — Humoyun Mahmudjonov</title>
+  <meta name="description" content="About Humoyun Mahmudjonov (qomusiy) — Python & web developer based in Tashkent." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
-<body data-page="Home">
+<body data-page="About">
 
-  <!-- NAV -->
   <header class="nav" id="nav">
     <div class="wrap nav-inner">
       <a href="index.html" class="brand"><span class="dot">✱</span> qomusiy</a>
@@ -40,62 +35,50 @@
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero">
+    <section class="page-hero">
       <div class="wrap">
-        <div class="status" id="heroStatus">
-          <span class="pulse"></span><span id="availText">Available for work</span>
-        </div>
-        <h1 id="heroName">Humoyun<br><span class="accent">Mahmudjonov</span></h1>
-        <p class="hero-role" id="heroRole"></p>
-        <p class="hero-tag" id="heroTag"></p>
-        <div class="hero-cta">
-          <a href="work.html" class="btn btn-primary">View work
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-          <a href="contact.html" class="btn btn-ghost">Get in touch</a>
-        </div>
-        <div class="hero-socials" id="heroSocials"></div>
+        <span class="label mono">About</span>
+        <h1>Hi, I'm<br>Humoyun.</h1>
+        <p data-bind="meta.tagline"></p>
       </div>
     </section>
 
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
-
-    <!-- ABOUT TEASER -->
+    <!-- BIO + STATS -->
     <section>
-      <div class="wrap split reveal">
-        <div>
-          <span class="section-head label mono" style="display:inline-flex">About</span>
-          <p class="lead" style="margin-top:18px">A developer who likes the whole stack — not just one slice of it.</p>
-          <p class="muted">From the data model to the deploy, I like owning the full path a feature takes. The handle <em>qomusiy</em> is Uzbek for an encyclopedist — someone who learns a little of everything and connects the dots.</p>
-          <a href="about.html" class="text-link" style="margin-top:22px">More about me
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-        </div>
-        <div class="stats" id="stats"></div>
+      <div class="wrap about-grid">
+        <div class="about-text reveal" id="aboutText"></div>
+        <div class="stats reveal" id="stats"></div>
       </div>
     </section>
 
-    <!-- WORK TEASER -->
+    <!-- STACK -->
     <section>
       <div class="wrap">
-        <div class="teaser-head reveal">
-          <h2>Selected work</h2>
-          <a href="work.html" class="text-link">All projects
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
+        <div class="section-head reveal">
+          <span class="label mono">Toolkit</span>
+          <h2>The stack I reach for.</h2>
+          <p>Pragmatic choices over hype — these are the tools I'm fast and confident in.</p>
         </div>
-        <div class="projects-list reveal" id="projectsTeaser"></div>
+        <div class="reveal" id="stackList"></div>
       </div>
     </section>
 
-    <!-- CONTACT CTA -->
+    <!-- TIMELINE -->
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label mono">Path</span>
+          <h2>Where I've been.</h2>
+        </div>
+        <div class="timeline reveal" id="timeline"></div>
+      </div>
+    </section>
+
     <section class="contact">
       <div class="wrap reveal">
-        <span class="label mono">Contact</span>
-        <h2>Let's build<br>something.</h2>
-        <a href="contact.html" class="btn btn-primary" style="margin-top:8px">Start a conversation
+        <span class="label mono">Say hi</span>
+        <h2>Want to<br>work together?</h2>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:8px">Get in touch
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
       </div>
